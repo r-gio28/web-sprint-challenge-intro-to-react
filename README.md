@@ -79,6 +79,22 @@ After finishing your required elements, you can push your work further. These go
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Put your answers underneath the questions:
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
+
+      React is used for handling the view layer for the web and mobile apps. React can also allow us to create reusable UI components. One of the biggest upsides of React is that it can change data without reloading the page. One can also setEffect and have information rendered whenever something changes. The regular DOM is super slow because it will return and work more than we would like it to. React developed the Virtual DOM engine that syncs up with the "real" DOM. But it only renders new information if it is new, and it ONLY renders that information to keep the webpage dynamic. same values will remain unchanged.
+
+
 1. Describe component state.
+
+  Declaring a state variable essentially allows you to schedule an update to a components state object. When the state changes, the component responds by re-rendering. The state of a component is an object that holds some information that may change over the lifetime of the component. It establishes a variable, as the first parameter. And the second is a function that updates it. When we set the state to 0, [], or ' '; React will remember its current value between re-renders, and provide the most recent one to our function.
+
+
 1. Describe props.
+
+    Props is a special keyword that stands for properties and is being used for passing data from one component to another. Props are passed to components via HTML attributes
+
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+
+      useEffect will let us express different kinds of side effects after a component renders. For example, cleanups can run after a component renders.
+
+      One of the main things we can use it for is for fetching data for a component. And we can manipulate it to where it will only run once, after the component renders and/or when something changes and we want our app to fetch new info from  or data source.
