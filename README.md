@@ -98,3 +98,5 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
       useEffect will let us express different kinds of side effects after a component renders. For example, cleanups can run after a component renders.
 
       One of the main things we can use it for is for fetching data for a component. And we can manipulate it to where it will only run once, after the component renders and/or when something changes and we want our app to fetch new info from  or data source.
+
+      It can also help with response to user action.
